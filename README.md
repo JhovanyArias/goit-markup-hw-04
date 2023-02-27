@@ -1,2 +1,2 @@
 Pagina web:
-https://jhovanyarias.github.io/goit-markup-hw-02/
+https://jhovanyarias.github.io/goit-markup-hw-03/

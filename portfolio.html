@@ -2,10 +2,15 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portafolio</title>
+    <title>Web Studio</title>
     <link rel="stylesheet" href="./css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -13,43 +18,36 @@
       rel="stylesheet"
     />
   </head>
-
   <body>
     <header>
       <nav>
-        <a class="nav-link no-decoration" href="./index.html">WebStudio</a>
-        <ul>
-          <li>
-            <a class="no-decoration navigation_bar" href="./index.html"
-              >Estudio</a
+        <ul class="section-nav">
+          <a class="nav-link" href="#">WebStudio</a>
+          <li class="navigation_bar">
+            <a href="./index.html">Estudio</a>
+          </li>
+          <li class="navigation_bar">
+            <a class="current" href="./portfolio.html">Portafolio</a>
+          </li>
+          <li class="navigation_bar">
+            <a href="#">Contactos</a>
+          </li>
+          <li class="navigation_bar">
+            <a class="contact-info" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
             >
           </li>
-          <li>
-            <a class="no-decoration navigation_bar" href="#">Portafolio</a>
-          </li>
-          <li>
-            <a class="no-decoration navigation_bar" href="#">Contactos</a>
+          <li class="navigation_bar">
+            <a class="contact-info" href="tel:+525555296000"
+              >+52 55 5529 6000</a
+            >
           </li>
         </ul>
       </nav>
-      <ul>
-        <li>
-          <a
-            class="no-decoration navigation_bar"
-            href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li>
-          <a class="no-decoration navigation_bar" href="tel:+525555296000"
-            >+52 55 5529 6000</a
-          >
-        </li>
-      </ul>
     </header>
 
     <nav class="no-decoration navigation_bar" style="text-align: center">
-      <ul>
+      <ul class="buttons_menu_section">
         <button class="button_menu"><h3 class="text_button">Todo</h3></button>
         <button class="button_menu">
           <h3 class="text_button">Sitios-web</h3>
@@ -64,79 +62,108 @@
       </ul>
     </nav>
 
-    <section class="images">
-      <ul>
-        <img src="images/laptop_image.jpg" width="370" alt="laptop" />
-        <li>
-          <h3>Tecnoduck</h3>
-          <p class="description-parraph">Sitio Web</p>
+    <section>
+      <ul class="images-section">
+        <li class="image-container">
+          <a href="#">
+            <img src="images/laptop_image.jpg" alt="laptop" />
+            <h3 class="image-tittle">Tecnoduck</h3>
+            <p class="description-parraph detail-description-parraph">Sitio Web</p>
+          </a>
         </li>
-        <img
-          src="images/basquetball_players.jpg"
+        <li class="image-container">
+          <a href="#"></a>
+          <img
+            src="images/basquetball_players.jpg"
+            width="370"
+            alt="basquetball_players"
+          />
+          <h3 class="image-tittle">Póster de Nueva Orleans vs Estrella Dorada</h3>
+        </a>
+        </li>
+        <li class="image-container">
+          <a href="#">
+          <img
+          src="images/seafood_restaurant.jpg"
           width="370"
-          alt="basquetball_players"
-        />
-        <li>
-          <h3>Póster de Nueva Orleans vs Estrella Dorada</h3>
+          alt="restaurant"
+          />
+          <h3 class="image-tittle">Restaurante de Mariscos</h3>
+          <p class="description-parraph detail-description-parraph">Aplicaciones</p>
+          </a>
         </li>
-        <img src="images/seafood_restaurant.jpg" width="370" alt="restaurant" />
-        <li>
-          <h3>Restaurante de Mariscos</h3>
-          <p class="description-parraph">Aplicaciones</p>
+      </ul>
+      <ul class="images-section">
+        <li class="image-container">
+          <a href="#">
+          <img src="images/headphones.jpg" width="370" alt="headphones" />
+          <h3 class="image-tittle">Proyecto Prime</h3>
+          <p class="description-parraph detail-description-parraph">Marketing</p>
+          </a>
         </li>
-        <img src="images/headphones.jpg" width="370" alt="headphones" />
-        <li>
-          <h3>Proyecto Prime</h3>
-          <p class="description-parraph">Marketing</p>
+        <li class="image-container">
+          <a href="#">
+          <img src="images/box.jpg" width="370" alt="box" />
+          <h3 class="image-tittle">Proyecto Cajas</h3>
+          <p class="description-parraph detail-description-parraph">Aplicaciones</p>
+          </a>
         </li>
-        <img src="images/box.jpg" width="370" alt="box" />
-        <li>
-          <h3>Proyecto Cajas</h3>
-          <p class="description-parraph">Aplicaciones</p>
+        <li class="image-container">
+          <a href="#">
+          <img src="images/dashboard.jpg" width="370" alt="dashboard" />
+          <h3 class="image-tittle">La inspiracion no tiene limites</h3>
+          <p class="description-parraph detail-description-parraph">Sitio Web</p>
+          </a>
         </li>
-        <img src="images/dashboard.jpg" width="370" alt="dashboard" />
-        <li>
-          <h3>La inspiracion no tiene limites</h3>
-          <p class="description-parraph">Sitio Web</p>
+      </ul>
+      <ul class="images-section">
+        <li class="image-container">
+          <a href="#">
+          <img src="images/book.jpg" width="370" alt="book" />
+          <h3 class="image-tittle">Edicion Limitada</h3>
+          <p class="description-parraph detail-description-parraph">Diseño</p>
+          </a>
         </li>
-        <img src="images/book.jpg" width="370" alt="book" />
-        <li>
-          <h3>Edicion Limitada</h3>
-          <p class="description-parraph">Diseño</p>
+        <li class="image-container">
+          <a href="#">
+          <img src="images/project_lab.jpg" width="370" alt="project_lab" />
+          <h3 class="image-tittle">Proyecto LAB</h3>
+          <p class="description-parraph detail-description-parraph">Marketing</p>
+          </a>
         </li>
-        <img src="images/project_lab.jpg" width="370" alt="project_lab" />
-        <li>
-          <h3>Tecnoduck</h3>
-          <p class="description-parraph">Sitio Web</p>
-        </li>
-        <img src="images/rising_projects.jpg" width="370" alt="writing_code" />
-        <li>
-          <h3>Negocio en crecimiento</h3>
-          <p class="description-parraph">Aplicaciones</p>
+        <li class="image-container">
+          <a href="#">
+          <img
+            src="images/rising_projects.jpg"
+            width="370"
+            alt="writing_code"
+          />
+          <h3 class="image-tittle">Negocio en crecimiento</h3>
+          <p class="description-parraph detail-description-parraph">Aplicaciones</p>
+          </a>
         </li>
       </ul>
     </section>
     <footer>
       <address>
-        <a class="nav-link no-decoration" href="#">WebStudio</a>
-        <ul>
-          <li>
+        <ul class="footer-container">
+        <a class="nav-link" href="#">WebStudio</a>
+          <li class="footer-text">
             <a
-              class="footer-text address-text"
+              class="address-text"
               href="#"
               target="_blank"
               rel="noopener noreferrer"
             >
               Calz.Ticomán 500, Ciudad de<br />México, CDMX, Mexico</a
             >
-          </li>
-          <li>
-            <a class="footer-text" href="mailto:info@example.com"
+          <li class="footer-text footer-direction">
+            <a class="contact-info" href="mailto:info@example.com"
               >info@example.com</a
             >
           </li>
-          <li>
-            <a class="footer-text" href="tel:+525555296000">+525555296000</a>
+          <li class="footer-text footer-direction">
+            <a class="contact-info" href="tel:+525555296000">+525555296000</a>
           </li>
         </ul>
       </address>
