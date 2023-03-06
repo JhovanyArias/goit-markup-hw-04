@@ -38,7 +38,7 @@ address {
 
 .link {
   text-decoration: none;
-  color: inherit;
+  color: var(--third-color);
 }
 
 .list {
@@ -58,20 +58,28 @@ address {
   text-decoration: none;
 }
 
-.head_container {
-  background: var(--primary-color);
+.head-navigation {
+  color: var(--primary-color);
+}
+.head-bg-container {
+  background-color: rgba(53, 53, 53, 0.3);
   width: auto;
   height: 600px;
   padding-top: 200px;
   padding-bottom: 280px;
   text-align: center;
 }
+.head_container {
+  background-image: url(../images/bg-image.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 .button {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   width: 260px;
   height: 50px;
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 700;
   align-items: center;
@@ -86,17 +94,20 @@ address {
 }
 
 .navigation_bar {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-color);
 }
 
 .contact-info {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--details-color);
 }
 
-.navigation_bar:hover {
+.navigation_bar .contact-info:hover {
   color: var(--third-color);
+}
+.navigation_bar > svg:hover path {
+  fill: var(--third-color);
 }
 
 .section-nav {
@@ -123,14 +134,23 @@ address {
 }
 
 .navigation_bar:nth-child(5) {
-  margin-left: 280px;
+  margin-left: 250px;
 }
+
 .navigation_bar:nth-child(6) {
-  margin-left: 50px;
+  margin-left: 10px;
+}
+
+.navigation_bar:nth-child(7) {
+  margin-left: 30px;
+}
+
+.navigation_bar:nth-child(8) {
+  margin-left: 10px;
 }
 
 .nav-link {
-  font-family: "Raleway", sans-serif;
+  font-family: 'Raleway', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 26px;
@@ -143,7 +163,7 @@ address {
 }
 
 h1 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 900px;
   font-size: 44px;
@@ -155,23 +175,25 @@ h1 {
 }
 
 h2 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--primary-color);
   font-size: 36px;
   text-align: center;
 }
 
 h3 {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--primary-color);
 }
 
 .description-parraph {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 14px;
   color: var(--details-color);
 }
+
+/* Details Section */
 
 .detail-section {
   display: flex;
@@ -182,30 +204,63 @@ h3 {
   list-style: none;
   display: block;
   margin-left: 30px;
+  text-align: left;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+}
+
+.detail-section .description-image {
+  display: block;
+  margin: auto;
+  margin-bottom: 55px;
 }
 
 .description-parraph:nth-child(2) {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--details-color);
   font-size: 14px;
+}
+
+.detalles {
+  margin-top: 100px;
 }
 
 .details-images-section {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
+}
+
+.detail-image-container {
+  width: 370px;
+  height: 294px;
 }
 
 .details-images-section .detail-image {
   list-style: none;
 }
 
-.details-images-section .detail-image:nth-child(n + 1) {
+.details-images-section .detail-image {
   margin-left: 30px;
+}
+
+.info-image {
+  background-color: #2f303a;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+}
+
+/* Equipo */
+
+.team {
+  margin-top: 188px;
 }
 
 .team-section {
   display: flex;
   justify-content: center;
+  margin-top: 50px;
 }
 
 .team-section .team-image {
@@ -219,6 +274,24 @@ h3 {
   margin-left: 30px;
 }
 
+/* Logos */
+
+.icons > svg .icono {
+  fill: var(--details-color);
+}
+.icons > svg:hover .elipse {
+  fill: var(--third-color);
+}
+.icons > svg:hover .icono {
+  fill: white;
+}
+
+.icons {
+  margin-left: 10px;
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
 .detail-description-parraph {
   margin-top: 10px;
   margin-bottom: 30px;
@@ -228,6 +301,51 @@ h3 {
 .image-tittle {
   margin-top: 30px;
 }
+
+/* Clientes Regulares */
+
+.clients {
+  margin-left: 10px;
+  display: inline-block;
+  list-style: none;
+}
+
+.clients > h2 {
+  margin-top: 153px;
+  margin-bottom: 44px;
+}
+
+.clients-container {
+  margin-top: 153px;
+}
+
+.list-clients-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 44px;
+  margin-bottom: 151px;
+}
+.list-clients {
+  list-style: none;
+}
+
+.clients > svg path {
+  fill: var(--details-color);
+}
+.clients > svg > rect {
+  stroke: var(--details-color);
+}
+
+.clients > svg:hover path {
+  fill: var(--third-color);
+  cursor: pointer;
+}
+
+.clients > svg:hover > rect {
+  stroke: var(--third-color);
+}
+
+/* Footer */
 
 footer {
   width: auto;
@@ -240,7 +358,7 @@ footer {
 
 .footer-text {
   margin-top: 9px;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   color: var(--details-color);
   list-style: none;
@@ -251,8 +369,42 @@ footer {
   color: white;
 }
 
+.contact-container {
+  display: flex;
+}
+
+.social-network {
+  color: white;
+}
+
 .footer-direction {
   color: var(--details-color);
+}
+
+.social-network {
+  color: white;
+}
+
+.icons-footer {
+  margin-top: 20px;
+}
+
+.icons-footer > svg .icono-footer {
+  fill: white;
+}
+
+.icons-footer > svg .elipse-footer {
+  fill: var(--details-color);
+}
+
+.icons-footer > svg:hover .elipse-footer {
+  fill: var(--third-color);
+}
+
+.icons-footer {
+  margin-left: 10px;
+  display: inline-block;
+  margin-bottom: 30px;
 }
 
 /* Portfolio */
@@ -268,7 +420,7 @@ footer {
 }
 
 .button_menu {
-  font-family: "Roboto";
+  font-family: 'Roboto';
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
