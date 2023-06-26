@@ -96,6 +96,10 @@ address {
   border-color: var(--primary-color);
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .navigation_bar {
   display: flex;
   font-family: 'Roboto';
