@@ -118,7 +118,7 @@ address {
   padding-bottom: 32px;
 }
 
-.navigation_bar .contact-info:hover {
+.contact-info:hover {
   color: var(--third-color);
   fill: var(--third-color);
 }
