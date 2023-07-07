@@ -32,6 +32,11 @@ img {
   height: auto;
 }
 
+.container {
+  width: 1200px;
+  margin: auto;
+}
+
 address {
   font-style: normal;
 }
@@ -128,7 +133,6 @@ address {
 
 .section-nav {
   display: flex;
-  padding-left: 215px;
 }
 
 .section-nav .navigation_bar {
